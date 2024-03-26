@@ -1,0 +1,11 @@
+<!-- word-guess.component.html -->
+
+<div *ngIf="gameStarted">
+    <h1>Devinez le mot :</h1>
+    <h2>{{ scrambledWord }}</h2>
+  </div>
+  
+  <div *ngIf="!gameStarted">
+    <button (click)="startGame()">Commencer</button>
+  </div>
+  
